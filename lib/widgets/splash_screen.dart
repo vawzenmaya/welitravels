@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.white,
+        color: const Color(0xFF600060),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -36,8 +36,14 @@ class _SplashScreenState extends State<SplashScreen> {
                   children: [
                     Image.asset(
                       'assets/weli_splash.png',
-                      height: 200,
+                      width: 300,
                     ),
+                    Text(
+                      "Life-Changing Journey",
+                      style: TextStyle(
+                        color: Colors.white
+                      ),
+                    )
                   ],
                 ),
               ),
